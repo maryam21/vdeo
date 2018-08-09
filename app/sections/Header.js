@@ -10,13 +10,15 @@ export default class Header extends React.Component{
     }
 
     toggleUser = () => {
-
+        this.setState(previous => {
+            return { isLoggedIn: !previous.isLoggedIn };
+        })
     }
 
     render() {
         let display = this.state.isLoggedIn ? 'Username' : 'Login'
         return (
-            <Text>{display}</Text>
+            <Text onPress={this.toggleUser}>{display}</Text>
         );
     }
 }
