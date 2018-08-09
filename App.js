@@ -1,8 +1,21 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import Home from './app/views/Home.js';
-import Header from './app/sections/Header.js';
+import StackNavigator from 'react-navigation';
+import Home from './app/views/Home';
+import Header from './app/sections/Header';
 
+const Routes = StackNavigator({
+  HomeRT: {
+    screen: Home
+  },
+  RegisterRT: {
+    screen: Register
+  }
+},
+  {
+    initialRouteName: 'HomeRT'
+  }
+)
 export default class App extends React.Component {
   render() {
     return (
