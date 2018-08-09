@@ -18,7 +18,26 @@ export default class Header extends React.Component{
     render() {
         let display = this.state.isLoggedIn ? 'Username' : 'Login'
         return (
-            <Text onPress={this.toggleUser}>{display}</Text>
+            <View style={styles.headerView}>
+            <Text 
+                style={styles.headerText}
+                onPress={this.toggleUser}>{display}
+            </Text>
+            </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    headerText: {
+      textAlign: 'right',
+      fontSize: 20,
+      color: '#fff',
+    },
+    headerView: {
+        backgroundColor: '#35605a',
+        paddingTop: 30,
+        paddingBottom: 20,
+    }
+  });
+  
