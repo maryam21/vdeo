@@ -1,10 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Platform } from 'react-native';
 
 export default class Home extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            platformVersion: Platform.Version
+        }
+    }
+
     render(){
         return (
-            <Text style={styles.text}>Home</Text>
+            <Text style={styles.text}>Home: {this.state.platformVersion}</Text>
         );
     }
 }
