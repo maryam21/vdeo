@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#35605a',
         paddingTop: 30,
         paddingBottom: 20,
+        flex: 0
     }
   });
   
