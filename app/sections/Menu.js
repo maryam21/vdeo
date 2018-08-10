@@ -9,7 +9,8 @@ export default class Menu extends React.Component{
                 <TouchableOpacity>
                     <Text 
                         style={styles.button}
-                        onPress={this.props.navigation('RegisterRT')}>Register
+                        onPress={this.props.navigation('RegisterRT')}
+                        >Register
                     </Text>
                 </TouchableOpacity>
             </View>
