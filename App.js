@@ -3,6 +3,7 @@ import { View, StyleSheet, Text } from 'react-native';
 import StackNavigator from 'react-navigation';
 import Home from './app/views/Home';
 import Header from './app/sections/Header';
+import Register from './app/views/Register';
 
 const Routes = StackNavigator({
   HomeRT: {
