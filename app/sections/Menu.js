@@ -3,10 +3,6 @@ import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 export default class Menu extends React.Component{
-    registration = () => {
-        Alert.alert('tapped');
-    }
-
     render() {
         return (
             <View>
